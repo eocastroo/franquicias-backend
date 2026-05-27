@@ -1,0 +1,5 @@
+echo ".metadata/" >> .gitignore
+echo "target/" >> .gitignore
+echo ".classpath" >> .gitignore
+echo ".project" >> .gitignore
+echo ".settings/" >> .gitignore
