@@ -16,6 +16,8 @@ public interface ProductService {
     public ResponseEntity<ProductResponseREST> update(Product product, Long id);
 
     public ResponseEntity<ProductResponseREST> deleteById(Long id);
+    
+    public ResponseEntity<ProductResponseREST> topStock(Long branchId);
 
 }
 

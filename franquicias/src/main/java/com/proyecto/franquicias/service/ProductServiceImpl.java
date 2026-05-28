@@ -90,5 +90,20 @@ public class ProductServiceImpl implements ProductService {
 
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
+    
+    @Override
+    public ResponseEntity<ProductResponseREST> topStock(Long branchId) {
+
+        ProductResponseREST response = new ProductResponseREST();
+
+        Optional<Product> product =
+                repository.findTopByBranchIdOrderByStockDesc(branchId);
+
+        response.setResponse(product);
+
+        return new ResponseEntity<>(response, HttpStatus.OK);
+    }
+
+
 
 }

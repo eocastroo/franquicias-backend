@@ -74,6 +74,23 @@ public class ProductRestController {
 
         return response;
     }
+    
+    /*
+     * top stock product by branch
+     */
+    @GetMapping("/top-stock/{branchId}")
+    public ResponseEntity<ProductResponseREST> topStock(
+            @PathVariable Long branchId) {
+
+        ResponseEntity<ProductResponseREST> response =
+                service.topStock(branchId);
+
+        return response;
+    }
+
+
+    
+    
 
 }
 
