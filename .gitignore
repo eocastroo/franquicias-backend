@@ -1,5 +1,19 @@
-echo ".metadata/" >> .gitignore
-echo "target/" >> .gitignore
-echo ".classpath" >> .gitignore
-echo ".project" >> .gitignore
-echo ".settings/" >> .gitignore
+# Eclipse
+.metadata/
+.classpath
+.project
+.settings/
+bin/
+
+# STS
+.springBeans
+
+# Maven
+target/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
