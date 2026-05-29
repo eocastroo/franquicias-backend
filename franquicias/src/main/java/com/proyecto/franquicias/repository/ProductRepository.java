@@ -8,8 +8,7 @@ import com.proyecto.franquicias.model.Product;
 
 public interface ProductRepository
         extends JpaRepository<Product, Long> {
-	
-	Optional<Product> findTopByBranchIdOrderByStockDesc(Long branchId);
+
+    Optional<Product> findTopByBranchIdOrderByStockDesc(Long branchId);
 
 }
-
